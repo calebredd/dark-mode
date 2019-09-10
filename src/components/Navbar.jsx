@@ -9,7 +9,7 @@ const Navbar = props => {
   const toggleMode = e => {
     e.preventDefault();
     setDarkMode(!darkMode);
-    darkMode ? setDark("App") : setDark("App dark-mode");
+    darkMode ? setDark("") : setDark("dark-mode");
   };
   return (
     <nav className="navbar">
