@@ -6,6 +6,6 @@ export default function useDarkMode() {
   const [darkMode, setDarkMode] = useLocalStorage("darkMode", "true");
   useEffect(() => {
     setDarkMode(!darkMode);
-    document.querySelector(body)[0].classList.toggle("dark-mode");
+    document.body.classList.toggle("dark-mode");
   }, []);
 }
